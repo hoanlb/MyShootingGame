@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class MovePlayer : MonoBehaviour
 {
     public float speed;
     public GameObject bullet;
+    public TextMeshProUGUI BloodNumber;
 
     void Update()
     {
@@ -31,5 +33,10 @@ public class MovePlayer : MonoBehaviour
             GameObject b = (GameObject)(Instantiate(bullet, transform.position + transform.up * 1.5f, Quaternion.identity));
             b.GetComponent<Rigidbody2D>().AddForce(transform.up * 1000);
         }
+    }
+
+    public void GameOver()
+    {
+        Debug.Log("Game Over");
     }
 }
