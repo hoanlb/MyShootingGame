@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 901153347486532150}
   - component: {fileID: 4147509422661423369}
   - component: {fileID: -7638065431241000935}
-  - component: {fileID: 5258015746947512935}
+  - component: {fileID: 8997773214215626707}
   m_Layer: 0
   m_Name: PlaneBom
   m_TagString: Untagged
@@ -131,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 0.81}
   m_EdgeRadius: 0
---- !u!114 &5258015746947512935
+--- !u!114 &8997773214215626707
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,8 +140,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4187725564730990921}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a13f9b207edf2940a35007d827093ae, type: 3}
+  m_Script: {fileID: 11500000, guid: e5e09e19ae3ea2545b54eba0d6b20761, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bom: {fileID: 8192319375436694133, guid: 4ed041146a2fe364c933f57ae31a8fbb, type: 3}
-  bomTime: 3
+  speed: 2

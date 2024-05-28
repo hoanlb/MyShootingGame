@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6996338176548447593}
   - component: {fileID: 2508588879542292741}
   - component: {fileID: 888699865608937679}
-  - component: {fileID: 4870306915179605428}
+  - component: {fileID: 4295245180688266800}
   m_Layer: 0
   m_Name: PlaneArmy
   m_TagString: Untagged
@@ -131,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 0.81}
   m_EdgeRadius: 0
---- !u!114 &4870306915179605428
+--- !u!114 &4295245180688266800
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,8 +140,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4109747307896220366}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa378db2458aeb345b910de06ed1491d, type: 3}
+  m_Script: {fileID: 11500000, guid: e5e09e19ae3ea2545b54eba0d6b20761, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  army: {fileID: 2915417024129870518, guid: 088fcf07a1b43244aa7a3df4bbe19cf5, type: 3}
-  armyTime: 2
+  speed: 3

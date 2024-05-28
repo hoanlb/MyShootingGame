@@ -162,3 +162,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   existTime: 3
+  num: 0
+  pointNumber: {fileID: 0}
