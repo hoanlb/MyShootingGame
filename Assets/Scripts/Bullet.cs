@@ -22,7 +22,12 @@ public class Bullet : MonoBehaviour
     {
         if (coll.gameObject.tag == "Army")
         {
-            Debug.Log("Start Destroy");
+            Destroy(coll.gameObject);
+            Destroy(gameObject);
+        }
+
+        if (coll.gameObject.tag == "Bom")
+        {
             Destroy(coll.gameObject);
             Destroy(gameObject);
         }

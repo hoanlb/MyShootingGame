@@ -1,12 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class BloodUpdate : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D coll)
+    public int num = 100;
+    public TextMeshProUGUI bloodNumber;
+    public GameObject gameOver;
+
+    void Start()
     {
-        Debug.Log("BloodUpdate");
-        GameCommon.Instance.BloodMinus(10);
+        Time.timeScale = 1;
+    }
+
+    public void OnTriggerEnter2D(Collider2D coll)
+    {
+        if (coll.gameObject.tag == "Army")
+        {
+            num -= 5;
+            bloodNumber.text = num.ToString();
+        }
+
+        if (coll.gameObject.tag == "Bom")
+        {
+            num -= 15;
+            bloodNumber.text = num.ToString();
+        }
+
+        if (num == 0)
+        {
+            GameOver();
+        }
+    }
+
+    public void GameOver()
+    {
+        gameOver.SetActive(true);
+        Time.timeScale = 0;
     }
 }
