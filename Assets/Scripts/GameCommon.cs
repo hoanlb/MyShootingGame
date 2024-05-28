@@ -7,9 +7,17 @@ public class GameCommon : MonoBehaviour
 {
     public TextMeshProUGUI BloodNumber;
 
-    public float num = 100;
+    public int num = 100;
 
     public static GameCommon Instance;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+    }
 
     public void BloodMinus(int num)
     {

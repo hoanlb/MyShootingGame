@@ -155,6 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   bullet: {fileID: 9080420707083705544, guid: 9a6c41536672ce040a30647b4a17551c, type: 3}
+  BloodNumber: {fileID: 2044238623}
 --- !u!212 &32640102
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -401,7 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BloodNumber: {fileID: 2044238623}
-  number: 0
+  num: 100
 --- !u!4 &402163208
 Transform:
   m_ObjectHideFlags: 0
@@ -523,7 +524,7 @@ GameObject:
   - component: {fileID: 653853761}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
