@@ -19,13 +19,13 @@ public class BloodUpdate : MonoBehaviour
         if (coll.gameObject.tag == "Army")
         {
             num -= 5;
-            bloodNumber.text = num.ToString();
+            bloodNumber.text = num.ToString() + "/" + "100";
         }
 
         if (coll.gameObject.tag == "Bom")
         {
             num -= 15;
-            bloodNumber.text = num.ToString();
+            bloodNumber.text = num.ToString() + "/" + "100";
         }
 
         if (num == 0)

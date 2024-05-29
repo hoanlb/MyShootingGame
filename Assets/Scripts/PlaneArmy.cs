@@ -18,6 +18,7 @@ public class PlaneArmy : MonoBehaviour
         if (timer > armyTime)
         {
             GameObject tmpArmy = Instantiate(army, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+            timer = 0;
         }
 
         timer += Time.deltaTime;

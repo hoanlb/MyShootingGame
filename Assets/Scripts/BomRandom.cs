@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class BomRandom : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class BomRandom : MonoBehaviour
         int max = 6;
         if (timer > randomTime)
         {
-            GameObject tmpPlaneArmy = Instantiate(bom, new Vector3(Random.Range(min, max), 4, 0), Quaternion.identity);
+            GameObject tmpPlaneArmy = Instantiate(bom, new Vector3(UnityEngine.Random.Range(min, max), 4, 0), Quaternion.identity);
             Destroy(tmpPlaneArmy, 20f);
 
             timer = 0;
